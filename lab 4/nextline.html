@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2</title>
+</head>
+<body>
+	<form>
+	
+		Enter something : <input type="text" name="character" id="char"><br>
+		<button onclick="lick();">submit</button>
+
+	</form>
+	<script type="text/javascript">
+		function lick(){
+		var x= document.getElementById('char').value;
+	    var len = x.length;
+	    for(var i=0 ; i<len ; i++)
+	    {
+	    	document.write(x[i]);
+	    	document.write("<br>");
+	    }
+
+		}</script>
+
+
+</body>
+</html>

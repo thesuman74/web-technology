@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		Enter something : <input type="text" name="name" id="char">
+		<button onclick="reversee();" >submit</button>
+	</form>
+
+	<script type="text/javascript">
+		function reversee(){
+			var x = document.getElementById('char').value;
+			var len = x.length;
+			for (var i=len-1 ; i>=0 ; i--)
+			{
+				document.write(x[i]);
+			}
+		}
+	</script>
+
+</body>
+</html>
