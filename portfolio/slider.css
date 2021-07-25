@@ -1,0 +1,163 @@
+{
+    box-sizing: border-box
+}
+body {
+    font-family: Verdana, sans-serif; margin:0
+    background: black;
+}
+
+
+
+.project .project-content .column-left img {
+  width: 500px;
+  height: 400px;
+  margin: 30px;
+  margin-top: 150px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.project .project-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background: black;
+}
+.project .project-content .column-right{
+  width: 45%;
+  padding-left: 10px;
+  color: white;
+/*  background: yellow;
+*/}
+
+
+.project .project-content .column-right .text{
+  width: 50%;
+  font-family: 'Ubuntu', sans-serif;
+    font-size:20px ;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: white;
+
+}
+.project .project-content .column-right .text span{
+  color: red;
+}
+
+.project .project-content .column-right p {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.project .button a {
+  color: white; 
+  font-size: 15px;
+  font-weight: 500;
+  width: 150px;
+  height: 20px;
+  border-radius: 7px;
+  text-align: center;
+  background: crimson;
+  display: inline-block;
+  margin-top: 10px;
+  border: 2px solid crimson;
+  transition: all 0.5s ease-out;
+  text-decoration: none;
+}
+
+.project .project-content .button a:hover{
+  color: red;
+  background: none;
+}
+
+
+
+ 
+/* Slideshow container */
+ 
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  background: black;
+
+}
+ 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+ 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+ 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: gray;
+}
+ 
+/* Caption text */
+
+ 
+ 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+ .dot:hover {
+  background-color: white;
+}
+ 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+.dot{
+ height: 10px;
+  width: 10px;
+}
+ 
+@media only screen and (max-width: 500px) {
+  .prev, .next,.text {font-size: 14px}
+}
